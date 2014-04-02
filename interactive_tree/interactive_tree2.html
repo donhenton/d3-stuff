@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <style>       
+            .node circle {
+                fill: #fff;
+                stroke: steelblue;
+                stroke-width: 1.5px;
+            }
+            .node {
+                font: 10px sans-serif;
+            }
+            .link_continuous {
+                fill: none;
+                stroke: #0000ff;
+                stroke-width: 1.5px;
+            }
+            .link_dashed {
+                fill: none;
+                stroke: #0000ff;
+                stroke-width: 1.5px;
+                stroke-dasharray: 20,10,5,5,5,10;
+            }
+
+        </style>
+
+        <title>Dash Line System</title>
+        <meta charset="UTF-8">
+        <script src="../js/jquery.js"></script>
+        <script src="../js/d3.v3_4_2.min.js"></script>
+        <script src="interactive_tree2.js"></script>
+        <script>
+            $(document).ready(function() {
+
+                createGraph();
+
+
+            });
+        </script>
+    </head>
+    <body>
+        <div id="graphItem"></div>
+
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Learning D3</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <style type="text/css">
+            
+            
+            .axis path,          
+            .axis line {
+                fill: none;
+                stroke: black;
+                shape-rendering: crispEdges;
+            }
+
+            .axis text {
+                font-family: sans-serif;
+                font-size: 10px;
+                fill: green;
+                font-weight:bold
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/d3.v3_4_2.min.js"></script>
+        <!--
+        <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script> 
+        -->
+        <script src="../js/scatterplot.js"></script>
+        <script src="zoom_tests.js"></script>
+        <h3>Scatterplot</h3>
+        <h5>Radius is the third dimension of the data</h5>
+        <div id="scatterplot"></div>
+
+
+    </body>
+</html>

@@ -1,0 +1,16 @@
+body { background: #4d4d4d; }
+svg.chart .background { fill:#4d4d4d }
+svg.chart  rect {
+   fill: #ddd;
+ }
+svg.chart text{ 
+    fill:#fff;
+    font-family: Helvetica,Arial,sans-serif;
+    font-weight: 100;
+    font-size: 10pt;
+}
+svg.chart .axis path { fill: none; stroke:#fff; }
+svg.chart .axis line { stroke: rgba(255,255,255,.21); }
+svg.chart .line{ fill:none; stroke:#75D018; stroke-width:6px }
+svg.chart .domain { stroke-width: 2.5px; }
+svg.chart .dot{ stroke:white; fill:#75D018; stroke-width:2px }

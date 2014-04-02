@@ -1,0 +1,74 @@
+
+.node {
+    cursor: pointer;
+}
+
+.type_Division circle
+{
+    stroke: red;
+}
+.type_Provider circle
+{
+    stroke: orange;
+}
+
+.node  circle {
+
+
+    stroke-width: 1.5px;
+}
+
+.node text {
+    font: 10px sans-serif;
+}
+
+.link {
+    fill: none;
+    stroke: #ccc;
+
+}
+.linkNormal
+{
+    stroke-width: 1.5px; 
+    stroke: #ccc;
+}
+.linkMark
+{
+    stroke-width: 3.0px;
+    stroke: firebrick
+}
+
+#outputBox
+{
+
+    margin: 5px;
+   
+}
+
+#action-container
+{
+
+    //margin-right: 50px;
+    width:150px;
+    height: 340px
+
+
+}
+#my_custom_menu
+{
+
+    padding: 2px;
+    border: thin solid black;
+    background-color: white;
+    width:150px;
+    height:110px;
+    border-radius: 28px;
+    -webkit-box-shadow: 4px 4px 3px #666666;
+    -moz-box-shadow: 4px 4px 3px #666666;
+    box-shadow: 4px 4px 3px #666666;
+
+}
+button
+{
+    margin: 10px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Interactive Tree</title>
+    <style>
+
+        .node {
+            cursor: pointer;
+        }
+
+        .type_Division circle
+        {
+            stroke: red;
+        }
+         .type_Provider circle
+        {
+            stroke: orange;
+        }
+       
+        .node  circle {
+            
+            
+            stroke-width: 1.5px;
+        }
+
+        .node text {
+            font: 10px sans-serif;
+        }
+
+        .link {
+            fill: none;
+            stroke: #ccc;
+            stroke-width: 1.5px;
+        }
+
+        #tree-container
+        {
+            border: 2px solid #707f0e;
+        }
+
+    </style>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/d3.v3_4_2.min.js"></script>
+    <script src="interactive_tree.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            TreeCode.createGraph();
+
+
+        });
+    </script>
+</head>
+<body>
+    <div   id="tree-container"></div>
+
+
+</body>

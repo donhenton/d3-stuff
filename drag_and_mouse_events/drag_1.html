@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chernoff Smileys Mouse Edition</title>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/d3.v3_4_2.min.js"></script>
+        <script src="drag_1.js"></script>
+
+        <script>
+            $(document).ready(function() {
+
+                createGraph();
+
+
+            });
+        </script>
+        <style>
+            #faces
+            {
+                float: left;
+            }
+
+            #info
+            {
+                float:right;
+                border: thin solid blue;
+                width: 250px;
+                height: 250px;
+            }
+            
+             #container
+            {
+                 
+                position: relative;
+                width: 1000px;
+                height: 450px;
+                margin: 20px
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <p>Click a Smiley<p>
+
+        <div id="container">
+            <div id="faces"></div>
+            <div id="info"></div>
+        </div>
+        <p>This demonstrates propagation of events, and namespaces to add 
+            multiple listeners for an object</p>
+    </body>
+</html>

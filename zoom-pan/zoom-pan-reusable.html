@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style></style>
+        <link rel="stylesheet" type="text/css" href="zoom-pan-reusable.css">
+    </head>
+    <body>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/d3.v3_4_2.min.js"></script>
+
+        <script src="zoom-pan-reusable.js"></script>
+        <script>
+            var chart = zoomChart();
+            var sin =
+                    d3.range(20).map(function(i) {
+                return {x: i / 19, y: (Math.sin(i / 3) + 2) / 4};
+            })
+            var data = [
+                {key: 'sin', values: sin},
+                {key: 'cosin', values: sin.map(function(d) {
+                        return {x: d.x + .1, y: d.y - .1}
+                    })}
+            ];
+            var svg = d3.select("body").append("svg")
+                    .datum(data)
+                    .call(chart);
+        </script>
+    </body>
+</html>
