@@ -71,7 +71,7 @@ TreeCode = {
         this.svg.call(zoomListener);
 
 //////////////////////////// zoom and pan //////////////////////////
-        d3.json("/d3_sandbox/interactive_tree/hospital_orig.json", function(error, hospital_data) {
+        d3.json("/d3-stuff/interactive_tree/hospital_orig.json", function(error, hospital_data) {
             TreeCode.root = hospital_data;
             TreeCode.root.x0 = height / 2;
             TreeCode.root.y0 = 0;
@@ -99,7 +99,7 @@ TreeCode = {
         if (d.type == 'Provider')
         {
             var elem = d3.select(t);
-            var image = "/d3_sandbox/images/User.png";
+            var image = "/d3-stuff/images/User.png";
             var title = "Provider";
 
             elem.append("svg:image")
